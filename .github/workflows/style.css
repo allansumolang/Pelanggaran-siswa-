@@ -1,0 +1,41 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    margin: 0;
+}
+header {
+    background: #0077b6;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+section {
+    background: white;
+    margin: 1em;
+    padding: 1em;
+    border-radius: 8px;
+}
+form select, form input, form textarea {
+    display: block;
+    margin: 0.5em 0;
+    width: 100%;
+    padding: 0.5em;
+}
+button {
+    padding: 0.5em 1em;
+    background: #0077b6;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1em;
+}
+th, td {
+    border: 1px solid #ccc;
+    padding: 0.5em;
+    text-align: center;
+}
