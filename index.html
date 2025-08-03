@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pelanggaran Siswa - SMPN 4 Modoinding</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>Sistem Pelanggaran Siswa</h1>
+    <h2>SMP Negeri 4 Modoinding</h2>
+</header>
+
+<section class="form-section">
+    <h3>Import Data</h3>
+    <label>Import Data Siswa (CSV): <input type="file" id="importSiswa"></label>
+    <label>Import Jenis Pelanggaran (CSV): <input type="file" id="importPelanggaran"></label>
+</section>
+
+<section class="form-section">
+    <h3>Form Input Pelanggaran</h3>
+    <form id="violationForm">
+        <select id="nama" required>
+            <option value="">Pilih Nama Siswa</option>
+        </select>
+        <input type="date" id="tanggal" required>
+        <select id="jenisPelanggaran" required>
+            <option value="">Pilih Jenis Pelanggaran</option>
+        </select>
+        <textarea id="tindakan" placeholder="Tindakan / Catatan Guru"></textarea>
+        <button type="submit">Simpan</button>
+    </form>
+</section>
+
+<section class="table-section">
+    <h3>Data Pelanggaran</h3>
+    <input type="text" id="search" placeholder="Cari Nama Siswa...">
+    <table id="dataTable">
+        <thead>
+            <tr>
+                <th>Nama</th>
+                <th>Kelas</th>
+                <th>Tanggal</th>
+                <th>Pelanggaran</th>
+                <th>Kategori</th>
+                <th>Poin</th>
+                <th>Tindakan</th>
+                <th>Surat</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
